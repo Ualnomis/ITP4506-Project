@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dream House Online | Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/97764fcf74.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- custom CSS File to override -->
+    <link href="./css/details.css" rel="stylesheet" />
+    <link href="./css/search.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- custom CSS File to override -->
+    <link rel="stylesheet" href="./css/hover.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <style>
+        .card-horizontal {
+            display: flex;
+            flex: 1 1 auto;
+        }
+
+        .check_mark {
+            width: 80px;
+            height: 130px;
+            margin: 0 auto;
+        }
+
+        button {
+            cursor: pointer;
+            margin-left: 15px;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .sa-icon {
+            width: 80px;
+            height: 80px;
+            border: 4px solid gray;
+            -webkit-border-radius: 40px;
+            border-radius: 40px;
+            border-radius: 50%;
+            margin: 20px auto;
+            padding: 0;
+            position: relative;
+            box-sizing: content-box;
+        }
+
+        .sa-icon.sa-success {
+            border-color: #4CAF50;
+        }
+
+        .sa-icon.sa-success::before,
+        .sa-icon.sa-success::after {
+            content: '';
+            -webkit-border-radius: 40px;
+            border-radius: 40px;
+            border-radius: 50%;
+            position: absolute;
+            width: 60px;
+            height: 120px;
+            background: white;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .sa-icon.sa-success::before {
+            -webkit-border-radius: 120px 0 0 120px;
+            border-radius: 120px 0 0 120px;
+            top: -7px;
+            left: -33px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-transform-origin: 60px 60px;
+            transform-origin: 60px 60px;
+        }
+
+        .sa-icon.sa-success::after {
+            -webkit-border-radius: 0 120px 120px 0;
+            border-radius: 0 120px 120px 0;
+            top: -11px;
+            left: 30px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-transform-origin: 0px 60px;
+            transform-origin: 0px 60px;
+        }
+
+        .sa-icon.sa-success .sa-placeholder {
+            width: 80px;
+            height: 80px;
+            border: 4px solid rgba(76, 175, 80, .5);
+            -webkit-border-radius: 40px;
+            border-radius: 40px;
+            border-radius: 50%;
+            box-sizing: content-box;
+            position: absolute;
+            left: -4px;
+            top: -4px;
+            z-index: 2;
+        }
+
+        .sa-icon.sa-success .sa-fix {
+            width: 5px;
+            height: 90px;
+            background-color: white;
+            position: absolute;
+            left: 28px;
+            top: 8px;
+            z-index: 1;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+
+        .sa-icon.sa-success.animate::after {
+            -webkit-animation: rotatePlaceholder 4.25s ease-in;
+            animation: rotatePlaceholder 4.25s ease-in;
+        }
+
+        .sa-icon.sa-success {
+            border-color: transparent\9;
+        }
+
+        .sa-icon.sa-success .sa-line.sa-tip {
+            -ms-transform: rotate(45deg) \9;
+        }
+
+        .sa-icon.sa-success .sa-line.sa-long {
+            -ms-transform: rotate(-45deg) \9;
+        }
+
+        .animateSuccessTip {
+            -webkit-animation: animateSuccessTip 0.75s;
+            animation: animateSuccessTip 0.75s;
+        }
+
+        .animateSuccessLong {
+            -webkit-animation: animateSuccessLong 0.75s;
+            animation: animateSuccessLong 0.75s;
+        }
+
+        @-webkit-keyframes animateSuccessLong {
+            0% {
+                width: 0;
+                right: 46px;
+                top: 54px;
+            }
+
+            65% {
+                width: 0;
+                right: 46px;
+                top: 54px;
+            }
+
+            84% {
+                width: 55px;
+                right: 0px;
+                top: 35px;
+            }
+
+            100% {
+                width: 47px;
+                right: 8px;
+                top: 38px;
+            }
+        }
+
+        @-webkit-keyframes animateSuccessTip {
+            0% {
+                width: 0;
+                left: 1px;
+                top: 19px;
+            }
+
+            54% {
+                width: 0;
+                left: 1px;
+                top: 19px;
+            }
+
+            70% {
+                width: 50px;
+                left: -8px;
+                top: 37px;
+            }
+
+            84% {
+                width: 17px;
+                left: 21px;
+                top: 48px;
+            }
+
+            100% {
+                width: 25px;
+                left: 14px;
+                top: 45px;
+            }
+        }
+
+        @keyframes animateSuccessTip {
+            0% {
+                width: 0;
+                left: 1px;
+                top: 19px;
+            }
+
+            54% {
+                width: 0;
+                left: 1px;
+                top: 19px;
+            }
+
+            70% {
+                width: 50px;
+                left: -8px;
+                top: 37px;
+            }
+
+            84% {
+                width: 17px;
+                left: 21px;
+                top: 48px;
+            }
+
+            100% {
+                width: 25px;
+                left: 14px;
+                top: 45px;
+            }
+        }
+
+        @keyframes animateSuccessLong {
+            0% {
+                width: 0;
+                right: 46px;
+                top: 54px;
+            }
+
+            65% {
+                width: 0;
+                right: 46px;
+                top: 54px;
+            }
+
+            84% {
+                width: 55px;
+                right: 0px;
+                top: 35px;
+            }
+
+            100% {
+                width: 47px;
+                right: 8px;
+                top: 38px;
+            }
+        }
+
+        .sa-icon.sa-success .sa-line {
+            height: 5px;
+            background-color: #4CAF50;
+            display: block;
+            border-radius: 2px;
+            position: absolute;
+            z-index: 2;
+        }
+
+        .sa-icon.sa-success .sa-line.sa-tip {
+            width: 25px;
+            left: 14px;
+            top: 46px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .sa-icon.sa-success .sa-line.sa-long {
+            width: 47px;
+            right: 8px;
+            top: 38px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+
+        @-webkit-keyframes rotatePlaceholder {
+            0% {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+
+            5% {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+
+            12% {
+                transform: rotate(-405deg);
+                -webkit-transform: rotate(-405deg);
+            }
+
+            100% {
+                transform: rotate(-405deg);
+                -webkit-transform: rotate(-405deg);
+            }
+        }
+
+        @keyframes rotatePlaceholder {
+            0% {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+
+            5% {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+
+            12% {
+                transform: rotate(-405deg);
+                -webkit-transform: rotate(-405deg);
+            }
+
+            100% {
+                transform: rotate(-405deg);
+                -webkit-transform: rotate(-405deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top  navbar-custom">
+        <div class="container">
+            <a class="navbar-brand hvr-float" href="./index.html"><i class="fas fa-hotel">Dream House</i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item hvr-icon-pulse hvr-float">
+                        <a class="nav-link" href="./index.html"><i class="fas fa-home hvr-icon"></i>Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item hvr-float">
+                        <a class="nav-link" href="./buy_property.html">Buy</a>
+                    </li>
+                    <li class="nav-item active hvr-float">
+                        <a class="nav-link" href="./rent_property.html">Rent</a>
+                    </li>
+                    <li class="nav-item hvr-float">
+                        <a class="nav-link" href="./news.html">News & Blog</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fas fa-globe-asia"></i>Language</button>
+                        <div class="dropdown-content">
+                            <a href="#">English</a>
+                            <a href="#">繁體中文</a>
+                            <a href="#">简体中文</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="property">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Property Profile</h1>
+                    <hr />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Sha Tin, Very good House, 22 Floor Flat C</h3>
+                    <p>58A-58B Sha Tin Road, Mid-levels West, New Territories</p>
+                    <h4>Sell for:
+                        <label style="color: red">$1000 Million</label>
+                    </h4>
+                    <p>(S) 1,040 (G) 1,256 sq.ft. 3-Bed., 2-Bath.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8"> <img id="main-property-img" src="img/room1.jpg">
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-2 custom-card hvr-grow-shadow" style="cursor: pointer;"> <img
+                                src="img/room2.jpg" class="property-img"> </div>
+                        <div class="col-md-2 custom-card hvr-grow-shadow" style="cursor: pointer;"> <img
+                                src="img/room3.jpg" class="property-img"> </div>
+                        <div class="col-md-2 custom-card hvr-grow-shadow" style="cursor: pointer;"> <img
+                                src="img/room4.jpg" class="property-img"> </div>
+                        <div class="col-md-2 custom-card hvr-grow-shadow" style="cursor: pointer;"> <img
+                                src="img/room5.jpg" class="property-img"> </div>
+                        <div class="col-md-2 custom-card hvr-grow-shadow" style="cursor: pointer;"> <img
+                                src="img/room6.jpg" class="property-img"> </div>
+                        <div class="col-md-2 custom-card hvr-grow-shadow" style="cursor: pointer;"> <img
+                                src="img/room7.jpg" class="property-img"> </div>
+                    </div>
+                    <div class="property-info">
+                        <h3>General Information</h3>
+                        <table class="table table-sm table-striped general-info">
+                            <tbody>
+                                <tr class="rental">
+                                    <th scope="row">Rental</th>
+                                    <td>: <small class="currency">HKD</small> <span class="price-in-hkd"
+                                            data-amount="62000">62,000</span>
+                                        <small>Incl.</small></td>
+                                </tr>
+                                <tr class="saleable_area">
+                                    <th scope="row">Saleable Area</th>
+                                    <td>:
+                                        1,040 <small>sq.ft.</small></td>
+                                </tr>
+                                <tr class="gross_area">
+                                    <th scope="row">Gross Area</th>
+                                    <td>:
+                                        1,256 <small>sq.ft.</small></td>
+                                </tr>
+                                <tr class="bedroom">
+                                    <th scope="row">Bedroom(s)</th>
+                                    <td>:
+                                        3
+
+                                        (1-Ensuite) </td>
+                                </tr>
+                                <tr class="bathroom">
+                                    <th scope="row">Bathroom(s)</th>
+                                    <td>:
+                                        2 </td>
+                                </tr>
+                                <tr class="property_id">
+                                    <th scope="row">Property#</th>
+                                    <td>: 1363</td>
+                                </tr>
+                                <tr class="last_update">
+                                    <th scope="row">Last Updated</th>
+                                    <td>: 2020-10-09 </td>
+                                </tr>
+
+                                <tr class="other_area">
+                                    <th scope="row">Bay Window</th>
+                                    <td>: 23 <small>sq.ft.</small></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr>
+                        <h3>Layout</h3>
+                        <p class="layout">3 Bedroom(s) (1-Ensuite); 2 Bathroom(s); Combined Living and Dining Room; 1
+                            Maid's Room; 1
+                            Utility Room</p>
+                        <hr>
+                        <h3>View</h3>
+                        <ul class="view">
+                            <li>Sweeping views of the city skyline and a part of the harbour.</li>
+                        </ul>
+                        <hr>
+
+                        <!-- Internal Condition -->
+                        <h3>Internal Condition</h3>
+                        <ul class="internal-condition">
+                            <li>Nicely renovated apartment with high efficiency ratio and nice wooden flooring.</li>
+                            <li>Long living and dining room is fitted with fan and ceiling lights and can be divided for
+                                different
+                                ambiences.</li>
+                            <li>Master and second bedroom enjoys dual aspect views.</li>
+                            <li>Master bedroom is fitted with built-in wardrobe and can take queen size bed with other
+                                furniture.</li>
+                            <li>Second bedroom can take a double bed with other furniture.</li>
+                            <li>Third bedroom comes with built-in wardrobe, can be used for guest or as a study.</li>
+                            <li>Fully equipped kitchen comes with essential appliances and built-in cabinets.</li>
+                            <li>Bathrooms have been very well maintained. Double vanity basins and shower cubicle are
+                                provided in the
+                                master bathroom. Guest bathroom includes a bathtub.</li>
+                            <li>Maid's room with its own washroom and comes with a bed and storage unit.</li>
+                        </ul>
+                        <hr>
+                        <!-- .Internal Condition -->
+                        <h3>Price Trend</h3>
+                        <div id="chartContainer" style="height: 450px; width: 100%;"></div>
+                        <!-- Location Map -->
+                        <h3>Location Map</h3>
+                        <img src="img/map.PNG">
+                        <hr>
+                        <!-- .Location Map -->
+
+                        <h3 id="infoDistrictInfoAnchor">About Mid-levels West</h3>
+                        <div>
+                            <p>Due to proximity to Central, Midlevels traditionally has been popular for professionals,
+                                business
+                                executives and well-to-do entrepreneurs. Located halfway up the Peak and directly above
+                                Central,
+                                Midlevels West is loosely defined as an area South of Caine Road and Bonham Road, and
+                                West of Garden
+                                Road before reaching Pokfulam Road. Midlevels Escalator has been an indispensable mode
+                                transportation
+                                for many residents commuting to and from Central since 1993. Along the escalator, there
+                                are
+                                supermarkets, convenience stores, specialty shops, wet markets and entertainment
+                                districts with coffee
+                                shops, restaurants, pubs etc. for the convenience of the residents. However, residents
+                                of Lim Kai Bit
+                                Yip would probably be more inclined to use the Centre Street Escalator Link to connect
+                                to Sai Ying Pun
+                                MTR Station and other modes of public transportation down the hill for daily commute.
+                            </p>
+                            <p>Wide variety of housing options are available here, from ultra-luxurious apartments to
+                                small bachelor
+                                pads. Prices and rentals of these apartments also vary quite considerably according to
+                                the size,
+                                location, age, facilities and amenities, and quality of construction of the buildings.
+                            </p>
+                            <p>Many prestigious colleges and schools can be found in Mid-Levels, the most historical and
+                                famous
+                                schools being probably the University of Hong Kong, King's College, Ying Wa Girls'
+                                School, Raimondi
+                                College, Sacred Heart Canossian School, just to name a few.</p>
+                            <p><img class="w-100 lazy loaded" alt="King’s College" width="100%;"
+                                    src="img/kings-college.jpg"><br>
+                                King’s College</p>
+
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="col-lg-4 right">
+                    <a href="agent_profile.html">
+                        <div class="card">
+                            <div class="card-header"> AGENT INFO </div>
+                            <div class="card-body">
+                                <div class="row agent-item-sm">
+                                    <div class="col-4 photo"> <img class="portrait" src="img/african-face.jpg"
+                                            alt="Monita Wong" title="Monita Wong"> </div>
+                                    <div class="col-8 agent-info"> Peter KeW<br>
+                                        <small>Associate Director</small><br>
+                                        <small>Licence No.: 190046352</small><br>
+                                        <small>Peter Relocation &amp; Real Estate Services Ltd.</small><br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="card">
+                        <div class="card-header"> COMMENT </div>
+                        <div class="card-body">
+
+                            <div class="media my-media">
+                                <img class="pull-left media-object" src="img/face1.jpeg" width="50">
+                                <div class="media-body">
+                                    <a href="./user_profile.html">
+                                        <p><b>Danny Boyle:</b></p>
+                                    </a>
+                                    <p>"Best Agent Ever"</p>
+                                </div>
+                            </div>
+
+                            <div class="media my-media">
+                                <img class="pull-left media-object" src="img/cat.png" width="50">
+                                <div class="media-body">
+                                    <p><b>Meow Meow:</b></p>
+                                    <p>"Meow? Meow~"</p>
+                                </div>
+                            </div>
+                            <div class="media my-media">
+                                <img class="pull-left media-object" src="img/user-icon.jpg" width="50">
+                                <div class="media-body">
+                                    <p><b>You:</b></p>
+                                    <div class="input-group"><input type="text" class="form-control"
+                                            placeholder="Enter Comment" /><span class="input-group-btn">
+                                            <button class="btn btn-default" type="submit">
+                                                <i class="fa fa-reply "></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card enquiry" style=" bottom: 0px;">
+                        <div class="card-header"> Schedule a Viewing </div>
+                        <div class="card-body appointment-success-animate">
+                            <div class="check_mark">
+                                <div class="sa-icon sa-success animate">
+                                    <span class="sa-line sa-tip animateSuccessTip"></span>
+                                    <span class="sa-line sa-long animateSuccessLong"></span>
+                                    <div class="sa-placeholder"></div>
+                                    <div class="sa-fix"></div>
+                                </div>
+                            </div>
+                            <center class="success-message">Thank You for your Appointment</center>
+                            <form class="contactus">
+                                <div class="form-group">
+                                    <input name="client_name" type="text" class="form-control" placeholder="Your name"
+                                        required="" maxlength="30">
+                                </div>
+                                <div class="form-group">
+                                    <input name="client_email" type="email" class="form-control"
+                                        placeholder="Your email address" required="" maxlength="60">
+                                </div>
+                                <div class="form-group">
+                                    <input name="client_contact_no" type="text" class="form-control"
+                                        placeholder="Your contact number" required="" maxlength="15">
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" name="bookDate" class="form-control" />
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea name="client_message" class="form-control"
+                                        rows="3">Hello, I am interested in the property for Rent at Scenic Heights - Block 01 (Property#: 1363)</textarea>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck2"
+                                        name="receiveupdate" value="1">
+                                    <label class="form-check-label" for="dropdownCheck2"> I'd like to receive updates.
+                                    </label>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-appointment-submit">Submit</button>
+                                <input type="hidden" name="_token" value="5mXk8dzTfQv6AGSy1cRieA4ZukkOZ4OkLUuRhlHn">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header"> SHARE WITH FRIENDS </div>
+                        <div class="card-body">
+
+                            <a class="btn btn-social-icon btn-twitter"> <span class="fa fa-twitter"></span> </a>
+                            <a class="btn btn-social-icon btn-facebook"> <span class="fa fa-facebook"></span> </a>
+                            <a class="btn btn-social-icon btn-instagram"> <span class="fa fa-instagram"></span> </a>
+                            <a class="btn btn-social-icon btn-google"> <span class="fa fa-google"></span> </a>
+                            <a class="btn btn-social-icon btn-tumblr"> <span class="fa fa-tumblr"></span> </a>
+                            <a class="btn btn-social-icon btn-yahoo"> <span class="fa fa-yahoo"></span> </a>
+                            <a class="btn btn-social-icon btn-reddit"> <span class="fa fa-reddit"></span> </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header"> My Notes </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <textarea name="client_notes" class="form-control" rows="3" data-gramm="true"
+                                        placeholder="Make a note"></textarea>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-notes">Save</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header"> USEFUL LINKS </div>
+                        <div class="card-body">
+                            <ul class="px-3">
+                                <li><a href="">Scenic Heights - Block 01 Properties</a></li>
+                                <li><a href="">Search Properties For Rent in Scenic Heights - Block 01</a></li>
+                                <li><a href="">Search Properties For Rent in Mid-levels West</a></li>
+                                <li><a href="">Looking for Serviced Apartments?</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="last-aside w-100"></div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="propertyRemoveModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Remove Property</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span
+                            aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body"> Are you sure remove the property? </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal"
+                        id="btn-remove-property">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p>
+                        Dream House Online Help You to find your dream house.
+                    </p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Categories</h6>
+                    <ul class="footer-links">
+                        <li><a href="">Buy Property</a></li>
+                        <li><a href="">Rent Property</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Contribute</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+                        <a href="#">Lau Man Chun and Cheng Chi Kit</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.stock.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var dps1 = [], dps2 = [];
+            var stockChart = new CanvasJS.StockChart("chartContainer", {
+                theme: "light2",
+                exportEnabled: true,
+                title: {
+                    text: "樓價走向"
+                },
+                subtitles: [{
+                    text: "Price"
+                }],
+                charts: [{
+                    axisX: {
+                        crosshair: {
+                            enabled: true,
+                            snapToDataPoint: true
+                        }
+                    },
+                    axisY: {
+                        prefix: "$"
+                    },
+                    data: [{
+                        type: "candlestick",
+                        yValueFormatString: "$#,###.##",
+                        dataPoints: dps1
+                    }]
+                }],
+                navigator: {
+                    data: [{
+                        dataPoints: dps2
+                    }],
+                    slider: {
+                        minimum: new Date(2018, 04, 01),
+                        maximum: new Date(2018, 06, 01)
+                    }
+                }
+            });
+            $.getJSON("https://canvasjs.com/data/docs/btcusd2018.json", function (data) {
+                for (var i = 0; i < data.length; i++) {
+                    dps1.push({ x: new Date(data[i].date), y: [Number(data[i].open), Number(data[i].high), Number(data[i].low), Number(data[i].close)] });
+                    dps2.push({ x: new Date(data[i].date), y: Number(data[i].close) });
+                }
+                stockChart.render();
+            });
+
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+                $(".check_mark").hide();
+                $(".success-message").hide();
+            $(".btn-appointment-submit").click(function () {
+                $(".appointment-success-animate .contactus").hide();
+                $(".check_mark").show();
+                $(".success-message").show();
+                $(".sa-success").addClass("hide");
+                setTimeout(function () {
+                    $(".sa-success").removeClass("hide");
+                }, 10);
+            });
+        });
+    </script>
+    <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Dream House Online | Index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Open+Sans&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/97764fcf74.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- custom CSS File to override -->
+  <link rel="stylesheet" href="./css/hover.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top  navbar-custom">
+    <div class="container">
+      <a class="navbar-brand hvr-float" href="./index.html"><i class="fas fa-hotel">Dream House</i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item hvr-icon-pulse hvr-float">
+            <a class="nav-link" href="./index.html"><i class="fas fa-home hvr-icon"></i>Home <span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item hvr-float">
+            <a class="nav-link" href="./buy_property.html">Buy</a>
+          </li>
+          <li class="nav-item hvr-float">
+            <a class="nav-link" href="./rent_property.html">Rent</a>
+          </li>
+            <li class="nav-item hvr-float">
+                <a class="nav-link" href="./news.html">News & Blog</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <div class="dropdown">
+            <button class="dropbtn"><i class="fas fa-globe-asia"></i>Language</button>
+            <div class="dropdown-content">
+              <a href="#">English</a>
+              <a href="#">繁體中文</a>
+              <a href="#">简体中文</a>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="upload-property">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Upload Property</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label>Upload Image</label>
+            <img id="img-upload" />
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button class="btn btn-primary btn-file">
+                  Browse… <input type="file" id="imgInp">
+                </button>
+              </span>
+              <input type="text" class="form-control" readonly>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <form>
+            <div class="form-group">
+              <label for="upload-property-type">For Sale/Rent</label>
+              <select class="form-control" id="upload-property-type">
+                <option>For Sale</option>
+                <option>For Rent</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="upload-property-location">Location</label>
+              <select class="form-control" id="upload-property-location">
+                <option>Central and West District</option>
+                <option>Eastern District</option>
+                <option>Southem District</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="upload-property-address" placeholder="Street Address">
+            </div>
+            <div class="form-group">
+              <label for="upload-property-title">Property Details</label>
+              <input type="text" class="form-control" id="upload-property-title" placeholder="Property Title">
+
+
+            </div>
+            <div class="form-group">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">HKD$</span>
+                </div>
+                <input type="text" class="form-control" id="upload-property-price" placeholder="Price"
+                  aria-label="Amount">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" id="upload-property-size" placeholder="Size(ft)" />
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">ft² (Saleable)</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="upload-property-age" placeholder="Building Age" />
+            </div>
+            <label>Beds</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+              <label class="form-check-label" for="exampleRadios1">
+                1
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                2
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option1">
+              <label class="form-check-label" for="exampleRadios3">
+                3
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option2">
+              <label class="form-check-label" for="exampleRadios4">
+                4
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option1">
+              <label class="form-check-label" for="exampleRadios5">
+                5+
+              </label>
+
+            </div>
+            <label>Baths</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="bathRadio" id="exampleRadios6" value="option1">
+              <label class="form-check-label" for="exampleRadios6">
+                1
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="bathRadio" id="exampleRadios7" value="option2">
+              <label class="form-check-label" for="exampleRadios7">
+                2
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="bathRadio" id="exampleRadios8" value="option1">
+              <label class="form-check-label" for="exampleRadios8">
+                3
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="bathRadio" id="exampleRadios9" value="option2">
+              <label class="form-check-label" for="exampleRadios9">
+                4
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="bathRadio" id="exampleRadios10" value="option1">
+              <label class="form-check-label" for="exampleRadios10">
+                5+
+              </label>
+            </div>
+            <label>Others</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Colonial Building
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+              <label class="form-check-label" for="defaultCheck2">
+                Corner Unit
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+              <label class="form-check-label" for="defaultCheck3">
+                Maidsroom
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+              <label class="form-check-label" for="defaultCheck4">
+                Outdoor Patio
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+              <label class="form-check-label" for="defaultCheck5">
+                Private Garden
+              </label>
+            </div>
+            <label>View</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+              <label class="form-check-label" for="defaultCheck6">
+                City View
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
+              <label class="form-check-label" for="defaultCheck7">
+                Lake View
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck8">
+              <label class="form-check-label" for="defaultCheck8">
+                Park/Greenery View
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
+              <label class="form-check-label" for="defaultCheck9">
+                Sae View
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
+              <label class="form-check-label" for="defaultCheck10">
+                Swimming Pool View
+              </label>
+            </div>
+            <label>Amenities</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
+              <label class="form-check-label" for="defaultCheck11">
+                Air-Conditioning
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
+              <label class="form-check-label" for="defaultCheck12">
+                Balcony
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck13">
+              <label class="form-check-label" for="defaultCheck13">
+                Garage
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck14">
+              <label class="form-check-label" for="defaultCheck14">
+                Roof Terrace
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck15">
+              <label class="form-check-label" for="defaultCheck15">
+                Intercom
+              </label>
+            </div>
+            <label>Agent Promote</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck16">
+              <label class="form-check-label" for="defaultCheck16">
+                Promote Property
+              </label>
+            </div>
+            <a href="./profile.html"><button type="button" class="btn btn-primary float-right" id="btn-upload-property">Post</button></a>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p>
+            Dream House Online Help You to find your dream house.
+          </p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="">Buy Property</a></li>
+            <li><a href="">Rent Property</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Contribute</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+            <a href="#">Lau Man Chun and Cheng Chi Kit</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

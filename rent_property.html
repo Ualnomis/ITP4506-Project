@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dream House Online | Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/97764fcf74.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- custom CSS File to over ride -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/hover.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+        .card-horizontal {
+            display: flex;
+            flex: 1 1 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top  navbar-custom">
+        <div class="container">
+            <a class="navbar-brand hvr-float" href="./index.html"><i class="fas fa-hotel">Dream House</i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item hvr-float">
+                        <a class="nav-link" href="./index.html"><i class="fas fa-home hvr-icon"></i>Home </a>
+                    </li>
+                    <li class="nav-item hvr-float">
+                        <a class="nav-link" href="./buy_property.html">Buy</a>
+                    </li>
+                    <li class="nav-item active hvr-icon-pulse hvr-float">
+                        <a class="nav-link" href="./rent_property.html">Rent<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item hvr-float">
+                        <a class="nav-link" href="./news.html">News & Blog</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fas fa-globe-asia"></i>Language</button>
+                        <div class="dropdown-content">
+                            <a href="#">English</a>
+                            <a href="#">繁體中文</a>
+                            <a href="#">简体中文</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="search-buy-property">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Rent Property</h1>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search by the name of the property"
+                            id="txtSearch" />
+                        <div class="input-group-btn">
+                            <button class="btn btn-primary btn-search-property"> <span
+                                    class="glyphicon glyphicon-search">Search</span>
+                            </button>
+                        </div>
+                    </div>
+                    <br />
+                    <h3>Filter property by</h3>
+                    <br />
+                    <div style="background-color:#F9F9F9"> &nbsp;&nbsp;&nbsp;<b>Region:</b>&nbsp;&nbsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="region" checked class="show-btn-search-property" />
+                            All</div> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="region" class="btn-search-property" />
+                            Hong Kong Island</div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="region" class="btn-search-property" />
+                            Kowloon</div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="region" class="btn-search-property" />
+                            New Territories</div>
+                        <br />
+                        <br />
+                        &nbsp;&nbsp;&nbsp;<b>Type:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&thinsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="type" checked class="show-btn-search-property" / />
+                            All</div> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="type" class="btn-search-property" />
+                            Residential</div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="type" class="btn-search-property" />
+                            Car Park</div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="type" class="btn-search-property" />
+                            Commercial</div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="type" class="btn-search-property" />
+                            Shop</div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="type" class="btn-search-property" />
+                            Land</div>
+                        <br />
+                        <br />
+                        &nbsp;&nbsp;&nbsp;<b>Price:</b>&nbsp;&nbsp;&nbsp;&nbsp;&thinsp;&thinsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="price" checked class="show-btn-search-property" / />
+                            All</div> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="price" class="btn-search-property" />
+                            Below 2,500</div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="price" class="btn-search-property" />
+                            2,500-5,000</div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="price" class="btn-search-property" />
+                            5,000-10,000</div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="price" class="btn-search-property" />
+                            10,000-20,000</div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="price" class="btn-search-property" />
+                            20,000-50,000</div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="price" class="btn-search-property" />
+                            50,000+</div>
+                        <br />
+                        <br />
+                        &nbsp;&nbsp;&nbsp;<b>Area:</b>&nbsp;&nbsp;&nbsp;&thinsp;&thinsp;&thinsp;&thinsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="area" checked class="show-btn-search-property" / />
+                            All</div> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="area" class="btn-search-property" />
+                            200 Below</div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="area" class="btn-search-property" />
+                            200-400</div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="area" class="btn-search-property" />
+                            400-600</div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="area" class="btn-search-property" />
+                            600-800</div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="area" class="btn-search-property" />
+                            800-1200</div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="radio" style="display: inline-block;">
+                            <input type="radio" name="area" class="btn-search-property" />
+                            1200+</div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="search-result"> Search Result (1,387 Sale)
+                        <div class="float-right">Sort By:
+                            <button class="btn btn-sm btn-sort" type="button" data-type="pr" data-value="asc">Price<i
+                                    class="fas fa-chevron-up sort-icon"></i></button>
+                            <button class="btn btn-sm btn-sort" type="button" data-type="ga" data-value="">G.A.</button>
+                            <button class="btn btn-sm btn-sort" type="button" data-type="sa" data-value="">S.A.</button>
+                            <button class="btn btn-sm btn-sort" type="button" data-type="lo"
+                                data-value="">Location</button>
+                            <span class="float-right d-none d-lg-block"> Display:
+                                <button class="btn btn-sm display-style" data-type="grid"><i
+                                        class="fas fa-th-large"></i> Grid
+                                    View</button>
+                                <button class="btn btn-sm display-style" data-type="list"><i class="fas fa-list-ul"></i>
+                                    List
+                                    View</button>
+                            </span> </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+
+            <center class="loading-animate">
+                <div class="lds-hourglass">
+                </div>
+                <h2 style="padding-top: 60px; margin-left: 70px;">Loading...</h2>
+            </center>
+            <div class="row row-cols-1 row-cols-md-3 property-result">
+                <div class="col mb-4 " data-aos="fade-up">
+                    <a href="property.html" class="custom-card hvr-grow-shadow">
+                        <div class="card">
+                            <img src="img/new9.jpg" class="card-img-top agent-property-icon" alt="...">
+                            <span>For Rent</span>
+                            <div class="card-body">
+                                <h5 class="card-title">Dream House</h5>
+                                <small>Hong Kong Island</small>
+                                <p class="card-text">
+                                <p>Price: <del>HKD$94870</del> <mark>-18% HKD$87000</mark></p>
+                                <p>Size: 592ft² (Saleable)</p>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col mb-4 agent-property-for-rent" data-aos="fade-up">
+                    <a href="property.html" class="custom-card hvr-grow-shadow">
+                        <div class="card">
+                            <img src="img/new8.jpg" class="card-img-top agent-property-icon" alt="...">
+                            <span>For Rent</span>
+                            <div class="card-body">
+                                <h5 class="card-title">Ming's Court</h5>
+                                <small>MongKok</small>
+                                <p class="card-text">
+                                <p>Rental: HKD$87000</p>
+                                <p>Size: 592ft² (Saleable)</p>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col mb-4 agent-property-for-sale" data-aos="fade-up">
+                    <a href="property.html" class="custom-card hvr-grow-shadow">
+                        <div class="card">
+                            <img src="img/new7.jpg" class="card-img-top agent-property-icon" alt="...">
+                            <span>For Rent</span>
+                            <div class="card-body">
+                                <h5 class="card-title">Dream House</h5>
+                                <small>Hong Kong Island</small>
+                                <p class="card-text">
+                                <p>Rental: HKD 15000</p>
+                                <p>Size: 592ft² (Saleable)</p>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col mb-4 agent-property-for-rent hide-buy-property" data-aos="fade-up">
+                    <a href="property.html" class="custom-card hvr-grow-shadow">
+                        <div class="card">
+                            <img src="img/new6.jpg" class="card-img-top agent-property-icon" alt="...">
+                            <span>For Rent</span>
+                            <div class="card-body">
+                                <h5 class="card-title">Ming's Court</h5>
+                                <small>MongKok</small>
+                                <p class="card-text">
+                                <p>Rental: HKD$87000</p>
+                                <p>Size: 592ft² (Saleable)</p>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col mb-4 agent-property-for-rent hide-buy-property" data-aos="fade-up">
+                    <a href="property.html" class="custom-card hvr-grow-shadow">
+                        <div class="card">
+                            <img src="img/new5.jpg" class="card-img-top agent-property-icon" alt="...">
+                            <span>For Rent</span>
+                            <div class="card-body">
+                                <h5 class="card-title">Ming's Court</h5>
+                                <small>MongKok</small>
+                                <p class="card-text">
+                                <p>Rental: HKD$87000</p>
+                                <p>Size: 592ft² (Saleable)</p>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col mb-4 agent-property-for-rent hide-buy-property" data-aos="fade-up">
+                    <a href="property.html" class="custom-card hvr-grow-shadow">
+                        <div class="card">
+                            <img src="img/new4.jpg" class="card-img-top agent-property-icon" alt="...">
+                            <span>For Rent</span>
+                            <div class="card-body">
+                                <h5 class="card-title">Ming's Court</h5>
+                                <small>MongKok</small>
+                                <p class="card-text">
+                                <p>Rental: HKD$87000</p>
+                                <p>Size: 592ft² (Saleable)</p>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col mb-4 agent-property-for-rent hide-buy-property" data-aos="fade-up">
+                    <a href="property.html" class="custom-card hvr-grow-shadow">
+                        <div class="card">
+                            <img src="img/new3.jpg" class="card-img-top agent-property-icon" alt="...">
+                            <span>For Rent</span>
+                            <div class="card-body">
+                                <h5 class="card-title">Ming's Court</h5>
+                                <small>MongKok</small>
+                                <p class="card-text">
+                                <p>Rental: HKD$87000</p>
+                                <p>Size: 592ft² (Saleable)</p>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col mb-4 agent-property-for-rent hide-buy-property" data-aos="fade-up">
+                    <a href="property.html" class="custom-card hvr-grow-shadow">
+                        <div class="card">
+                            <img src="img/new2.jpg" class="card-img-top agent-property-icon" alt="...">
+                            <span>For Rent</span>
+                            <div class="card-body">
+                                <h5 class="card-title">Ming's Court</h5>
+                                <small>MongKok</small>
+                                <p class="card-text">
+                                <p>Rental: HKD$87000</p>
+                                <p>Size: 592ft² (Saleable)</p>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col mb-4 agent-property-for-rent hide-buy-property" data-aos="fade-up">
+                    <a href="property.html" class="custom-card hvr-grow-shadow">
+                        <div class="card">
+                            <img src="img/new1.jpg" class="card-img-top agent-property-icon" alt="...">
+                            <span>For Rent</span>
+                            <div class="card-body">
+                                <h5 class="card-title">Ming's Court</h5>
+                                <small>MongKok</small>
+                                <p class="card-text">
+                                <p>Rental: HKD$87000</p>
+                                <p>Size: 592ft² (Saleable)</p>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="container">
+
+
+                    <nav aria-label="Page navigation example" style="padding: 0px 80px;">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p>
+                        Dream House Online Help You to find your dream house.
+                    </p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Categories</h6>
+                    <ul class="footer-links">
+                        <li><a href="">Buy Property</a></li>
+                        <li><a href="">Rent Property</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Contribute</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+                        <a href="#">Lau Man Chun and Cheng Chi Kit</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="agentCreateModal" tabindex="-1" aria-labelledby="agentCreateModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="agentCreateModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span
+                            aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="register-email">Email address</label>
+                        <input type="email" required class="form-control" id="register-email"
+                            aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Password</label>
+                        <input type="password" required class="form-control" id="register-password">
+                    </div>
+                    <div class="form-group">
+                        <label for="userTypeSelect">User Type</label>
+                        <select class="form-control" id="userTypeSelect">
+                            <option>Normal User</option>
+                            <option>Property Agent</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-name">name</label>
+                        <input type="text" required class="form-control" id="register-name"
+                            aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Tel</label>
+                        <input type="text" class="form-control" id="register-tel">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-mobile">Mobile</label>
+                        <input type="text" class="form-control" id="register-mobile">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"
+                        id="create-account">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="js/cardHover.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

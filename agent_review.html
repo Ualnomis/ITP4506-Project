@@ -1,0 +1,407 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Dream House Online | Index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Open+Sans&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/97764fcf74.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- custom CSS File to override -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="./css/details.css" rel="stylesheet" />
+  <link href="./css/search.css" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+
+
+
+
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet" />
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+  <!-- custom CSS File to override -->
+  <link rel="stylesheet" href="./css/hover.css" />
+
+  <style>
+    .card-horizontal {
+      display: flex;
+      flex: 1 1 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top  navbar-custom">
+    <div class="container">
+      <a class="navbar-brand hvr-float" href="./index.html"><i class="fas fa-hotel">Dream House</i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item hvr-icon-pulse hvr-float">
+            <a class="nav-link" href="./index.html"><i class="fas fa-home hvr-icon"></i>Home <span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item hvr-float">
+            <a class="nav-link" href="./buy_property.html">Buy</a>
+          </li>
+          <li class="nav-item hvr-float">
+            <a class="nav-link" href="./rent_property.html">Rent</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <div class="dropdown">
+            <button class="dropbtn"><i class="fas fa-globe-asia"></i>Language</button>
+            <div class="dropdown-content">
+              <a href="#">English</a>
+              <a href="#">繁體中文</a>
+              <a href="#">简体中文</a>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="user-profile">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>User Profile</h1>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="img/user-icon.jpg" id="user-profile-icon" />
+        </div>
+        <div class="col-md-8">
+          <h3>Peter Peter</h3>
+          <p>Date of birth: 2001-08-11</p>
+          <p>Gender: Male</p>
+          <p>Email: abc@abc.com</p>
+          <p>Phone Number: 94879487</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="user-profile-tab">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="agent_profile.html">Property</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Review</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="user-review">
+    <div class="container">
+      <div class="ht_searchContent col-12">
+        <div class="card ht_s_item flex-row mb-4 mt-4">
+          <div class="ht_searchBox show">
+            <div class="tabContent">
+              <div class="ht_searchBox_content">
+                <div class="row">
+                  <div class="col-12">
+                    <h4 class="card-title">Reviews</h4>
+                  </div>
+                  <div class="col-12">
+                    <div class="divider"></div>
+                    <label>Rating</label><br>
+                    <fieldset class="rating">
+                      <input id="star5" name="rating" value="5" type="radio"><label class="full" for="star5"
+                        title="Awesome - 5 stars"></label>
+                      <input id="star4half" name="rating" value="4.5" type="radio"><label class="half" for="star4half"
+                        title="Pretty good - 4.5 stars"></label>
+                      <input id="star4" name="rating" value="4" type="radio"><label class="full" for="star4"
+                        title="Pretty good - 4 stars"></label>
+                      <input id="star3half" name="rating" value="3.5" type="radio"><label class="half" for="star3half"
+                        title="Meh - 3.5 stars"></label>
+                      <input id="star3" name="rating" value="3" type="radio"><label class="full" for="star3"
+                        title="Meh - 3 stars"></label>
+                      <input id="star2half" name="rating" value="2.5" type="radio"><label class="half" for="star2half"
+                        title="Kinda bad - 2.5 stars"></label>
+                      <input id="star2" name="rating" value="2" type="radio"><label class="full" for="star2"
+                        title="Kinda bad - 2 stars"></label>
+                      <input id="star1half" name="rating" value="1.5" type="radio"><label class="half" for="star1half"
+                        title="Meh - 1.5 stars"></label>
+                      <input id="star1" name="rating" value="1" type="radio"><label class="full" for="star1"
+                        title="Sucks big time - 1 star"></label>
+                      <input id="starhalf" name="rating" value="0.5" type="radio"><label class="half" for="starhalf"
+                        title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+                    <div class="input-group mb-3">
+                      <input id="review_title" class="ht_input" placeholder="Title" type="text">
+                    </div>
+                    <div class="input-group mb-3">
+                      <textarea class="ht_input" placeholder="Comments" id="review_comment"></textarea>
+                    </div>
+                    <button id="sendReview" class="btn btn-success float-right">Submit
+                    </button>
+                  </div>
+                  <div class="col-12 mb-3 review">
+                    <div><span id="currentRate">3.4</span> out of 5</div>
+                    <div class="rating-bar">
+                      <div style="width:68%"></div>
+                    </div>
+                  </div>
+                  <div id="comment" class="d-flex flex-wrap">
+
+
+
+                    <div class="col-12 mb-3">
+                      <div class="divider"></div>
+                      <div class="summary">
+                        <div class="recommendation ">
+                          <div class="user-information">
+                            <div class="user cf">
+                              <span itemprop="author">Nero</span>
+                            </div>
+                          </div>
+                          <div class="date-posted">
+                            Oct 12, 2020
+                          </div>
+                        </div>
+                      </div>
+                      <div class="details">
+                        <div class="rating-header-container">
+                          <div class="review"><span>5</span> out of 5</div>
+                          <h3 class="review-title " style="left:5000px;">Very Very Good Good</h3>
+                        </div>
+                        <div class="review-text">
+                          <span class="translate-text">very polite, great man for dating</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                      <div class="divider"></div>
+                      <div class="summary">
+                        <div class="recommendation ">
+                          <div class="user-information">
+                            <div class="user cf">
+                              <span itemprop="author">Pikachu</span>
+                            </div>
+                          </div>
+                          <div class="date-posted">
+                            Oct 7, 2020
+                          </div>
+                        </div>
+                      </div>
+                      <div class="details">
+                        <div class="rating-header-container">
+                          <div class="review"><span>3</span> out of 5</div>
+                          <h3 class="review-title ">Pika</h3>
+                        </div>
+                        <div class="review-text">
+                          <span class="translate-text">Pika pika pikaCHU~~~~</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                      <div class="divider"></div>
+                      <div class="summary">
+                        <div class="recommendation ">
+                          <div class="user-information">
+                            <div class="user cf">
+                              <span itemprop="author">Hina Sato</span>
+                            </div>
+                          </div>
+                          <div class="date-posted">
+                            Oct 5, 2020
+                          </div>
+                        </div>
+                      </div>
+                      <div class="details">
+                        <div class="rating-header-container">
+                          <div class="review"><span>1</span> out of 5</div>
+                          <h3 class="review-title ">Nah</h3>
+                        </div>
+                        <div class="review-text">
+                          <span class="translate-text">We will all be dead in 30 days, there is no point to buy
+                            house.</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                      <div class="divider"></div>
+                      <div class="summary">
+                        <div class="recommendation ">
+                          <div class="user-information">
+                            <div class="user cf">
+                              <span itemprop="author">Leon</span>
+                            </div>
+                          </div>
+                          <div class="date-posted">
+                            Oct 2, 2020
+                          </div>
+                        </div>
+                      </div>
+                      <div class="details">
+                        <div class="rating-header-container">
+                          <div class="review"><span>4</span> out of 5</div>
+                          <h3 class="review-title ">Very Funny</h3>
+                        </div>
+                        <div class="review-text">
+                          <span class="translate-text">Chou Sing Chi is the best, just like me</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                      <div class="divider"></div>
+                      <div class="summary">
+                        <div class="recommendation ">
+                          <div class="user-information">
+                            <div class="user cf">
+                              <span itemprop="author">Pew Die Pie</span>
+                            </div>
+                          </div>
+                          <div class="date-posted">
+                            Oct 1, 2020
+                          </div>
+                        </div>
+                      </div>
+                      <div class="details">
+                        <div class="rating-header-container">
+                          <div class="review"><span>4</span> out of 5</div>
+                          <h3 class="review-title ">How is go</h3>
+                        </div>
+                        <div class="review-text">
+                          <span class="translate-text">ing bros, my name is jacksepticeye</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="container">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="propertyRemoveModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Remove Property</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Are you sure remove the property?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal" id="btn-remove-property">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p>
+            Dream House Online Help You to find your dream house.
+          </p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="">Buy Property</a></li>
+            <li><a href="">Rent Property</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Contribute</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+            <a href="#">Lau Man Chun and Cheng Chi Kit</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+  <script src="./js/review.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("nav div ul.navbar-nav li.nav-item").removeClass("active");
+    });
+  </script>
+</body>
+
+</html>
